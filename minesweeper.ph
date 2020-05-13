@@ -148,6 +148,9 @@ def on_draw(delte_time):
                     40, 40, arcade.color.BLUSH)
 
             if game.showList[count]:
+                arcade.draw_rectangle_filled(25+j*45, 25+45*i, 
+                    40, 40, arcade.color.GREEN)
+
                 if minesweeper.minList[count] == -1:
                     arcade.draw_circle_filled(25+j*45, 25+45*i, 10,  
                         arcade.color.GREEN) 
